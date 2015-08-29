@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sign in to Journal Quotidien</title>
+
+</head>
+<body>
+<h1><b>welcome to Journal Quotidien</b></h1>
+<div id='user_nav'>
+<% if user_signed_in? %>
+        Signed in as <%= current_user.email %>.NOT YOU!
+        <%= link_to "Sign out",  destroy_user_session_path,  method: :delete %> 
+         <% else %>
+        <%= link_to "Sign Up", new_user_registration_path %> or <%= link_to "Sign In", new_user_session_path  %>
+    <% end %>
+</div>
+
+<% flash.each do |name, msg| %>
+<%= content_tag :div, msg, :id => "flash_#{name}" %>
+<% end %>
+<p> welcone to Journal Quotidien . <br>
+this is for daily use it is online desktop..</p>
+</html>
