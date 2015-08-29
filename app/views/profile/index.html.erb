@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 </head>
 <body>
+
 <!-- Navbar -->
  <nav class="navbar navbar-default navbar-fixed.top" id="my-navbar">
 	 <div class="container">
@@ -26,43 +27,34 @@
 			</div>
 
 		 </div><!-- navbar header -->
-
+<br>
 
 		  <div class="collapse navbar-collapse" id="navbar-collapse">
 		    	
 		        	<ul class="nav navbar-nav">
-			      <li><a href="#features">features</a>
 				  <li><a href="">Calendar</a>
 				  <li><a href="">Notes</a>
 				  <li><a href="">To Do </a>
 				  <li><a href="">playlist</a>
-				  <li><a href="">weather</a>
-				  <li>
-				  <li>
-	              <li><a href="">clock</a>
+				  <li><a href="">clock</a>
 	              <li><a href="">my files</a>
+				  <li><a href="https:www.accuweather.com">weather</a>
+				  <li><a href="https://www.facebook.com">Facebook</a>
+				  <li><a href="https://instagram.com">Instagram</a>
+				  <li><a href="https://www.google.com">Google </a>
+				  <li><a href="https://maps.google.com">Maps</a>
+	              
 			   </ul>
 		  </div>
 	  </div>
 </nav>
-
-<!-- jumbotron -->
-<div class="jumbotron">
-	<div class="container text-left">
-	<p>welcome to your journal quotidien profile</p>
-	<div class="btn-group">
-	<a href="https://www.google.com" class="btn btn-lg btn-primary">Google </a>
-		<a href="https://www.facebook.com" class="btn btn-lg btn-primary">Facebook</a>
-		<a href="https://maps.google.com" class="btn btn-lg btn-primary">Maps</a>
-			</div>
-	</div>
-</div>
 
 <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 
-<footer>(c)2015 <%= link_to "Sign out",  destroy_user_session_path,  method: :delete %>
+<footer><span class="glyphicon glyphicon-copyright-mark"></span><b> 2015</b> 
+<%= link_to "Sign out",  destroy_user_session_path,  method: :delete %>
 </footer>
 </html>
