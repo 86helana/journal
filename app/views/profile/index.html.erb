@@ -2,25 +2,55 @@
 <html>
 <head>
 	<title>profile</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 </head>
 <body>
-<h1>welcome to your profile</h1><br>
-<ul>
-	<li><a href="">Calendar</a></li>
-	<li><a href="">Notes</a></li>
-	<li><a href="">To Do </a></li>
-	<li><a href="">playlist</a></li>
-	<li><a href="">weather</a></li>
-	<li><a href="https://maps.google.com">google Maps</a></li>
-	<li><a href="https://www.google.com">google </a></li>
-	<li><a href="https://www.facebook.com">Facebook</a></li>
-	<li><a href="https://www.youtube.com">Youtube</a></li>
-    <li><a href="">clock</a></li>
-	<li><a href="">my files</a></li>
-	
-</ul>
+<!-- Navbar -->
+ <nav class="navbar navbar-default navbar-fixed.top" id="my-navbar">
+	 <div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data.toggle="collapse" data-target="#navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="" class="navbar-brand"><b>JQ</b></a>
+
+		 </div><!-- navbar header -->
+
+
+		  <div class="collapse navbar-collapse" id="navbar-collapse">
+		    	<ul class="nav navbar-nav">
+			      <li><a href="#feedback">feedback</a>
+			      <li><a href="#gallery">gallery</a>
+			      <li><a href="#features">features</a>
+				  <li><a href="">Calendar</a>
+				  <li><a href="">Notes</a>
+				  <li><a href="">To Do </a>
+				  <li><a href="">playlist</a>
+				  <li><a href="">weather</a>
+				  <li><a href="https://maps.google.com">google Maps</a>
+				  <li><a href="https://www.google.com">google </a>
+	              <li><a href="https://www.facebook.com">Facebook</a>
+	              <li><a href="https://www.youtube.com">Youtube</a>
+	              <li><a href="">clock</a>
+	              <li><a href="">my files</a>
+			   </ul>
+		  </div>
+	  </div>
+</nav>
+
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
+
 <footer>(c)2015 <%= link_to "Sign out",  destroy_user_session_path,  method: :delete %>
 </footer>
 </html>
