@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  task: MyString
+  note: MyText
+  due_date: 2015-08-30
+  completed: false
+  reminder: false
+  time: 2015-08-30 07:02:23
+
+two:
+  task: MyString
+  note: MyText
+  due_date: 2015-08-30
+  completed: false
+  reminder: false
+  time: 2015-08-30 07:02:23
