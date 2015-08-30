@@ -11513,3 +11513,422 @@ Processing by TasksController#index as HTML
   [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
   Rendered tasks/index.html.erb within layouts/application (2.0ms)
 Completed 200 OK in 104ms (Views: 103.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-30 07:45:06 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 47ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/profile" for ::1 at 2015-08-30 07:45:06 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  Rendered profile/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 427ms (Views: 419.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-30 07:45:07 +0200
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 07:45:07 +0200
+
+
+Started GET "/assets/scaffolds.self-6ec5fbfa4becffc69e0d3d2e07e3f5da54a033f4997e9337f2c20a16a42df502.css?body=1" for ::1 at 2015-08-30 07:45:07 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-30 07:45:07 +0200
+
+
+Started GET "/assets/tasks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-30 07:45:07 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-30 07:45:07 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-30 07:45:07 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-30 07:45:07 +0200
+
+
+Started GET "/assets/dashboard.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 07:45:07 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-30 07:45:07 +0200
+
+
+Started GET "/assets/tasks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 07:45:07 +0200
+
+
+Started GET "/assets/profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-30 07:45:07 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-30 07:45:07 +0200
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-08-30 07:45:11 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tHOYNhpMktE4nyXIlKiWq2RHBWuEmKLRYhztX4jZxyXVrCoetX7hsMTjkGjIWUiK02cNj8mebyNSoPukbXifjQ=="}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 93ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-30 07:45:11 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 158ms (Views: 150.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-30 08:00:19 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 17669ms (Views: 17646.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-03465af18ff51aeb34f7032bfa62c18929032cf1fd4cac30bf491efb6cbd031c.css?body=1" for ::1 at 2015-08-30 08:00:37 +0200
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2015-08-30 08:00:37 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2015-08-30 08:00:37 +0200
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2015-08-30 08:00:37 +0200
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2015-08-30 08:00:37 +0200
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2015-08-30 08:00:37 +0200
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2015-08-30 08:00:37 +0200
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2015-08-30 08:00:38 +0200
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2015-08-30 08:00:38 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2015-08-30 08:00:38 +0200
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2015-08-30 08:00:38 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2015-08-30 08:00:38 +0200
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2015-08-30 08:00:38 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-08-30 08:00:38 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-08-30 08:00:38 +0200
+
+
+Started GET "/" for ::1 at 2015-08-30 08:19:00 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.0ms)
+
+SyntaxError (C:/Sites/journal/app/views/layouts/application.html.erb:18: syntax error, unexpected '<', expecting ')'
+					<li>'.freeze;@output_buffer.ap...
+					 ^
+C:/Sites/journal/app/views/layouts/application.html.erb:18: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Sign Out', destroy_user_session_p...
+...                               ^
+C:/Sites/journal/app/views/layouts/application.html.erb:19: unknown regexp option - l
+C:/Sites/journal/app/views/layouts/application.html.erb:21: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+...ffer.safe_append='				<ul class="new navbar-nav pull-right">
+...                  				         ^
+C:/Sites/journal/app/views/layouts/application.html.erb:22: syntax error, unexpected '<'
+					<li>'.freeze;@output_buffer.ap...
+					 ^
+C:/Sites/journal/app/views/layouts/application.html.erb:22: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Sign Up', new_user_registration_p...
+...                               ^
+C:/Sites/journal/app/views/layouts/application.html.erb:23: unknown regexp option - l
+C:/Sites/journal/app/views/layouts/application.html.erb:24: syntax error, unexpected '<'
+				</ul>
+				 ^
+C:/Sites/journal/app/views/layouts/application.html.erb:26: unknown regexp options - av
+C:/Sites/journal/app/views/layouts/application.html.erb:27: syntax error, unexpected '<'
+		</div>
+		 ^
+C:/Sites/journal/app/views/layouts/application.html.erb:28: unknown regexp options - dv
+C:/Sites/journal/app/views/layouts/application.html.erb:29: syntax error, unexpected '<'
+</header>
+ ^
+C:/Sites/journal/app/views/layouts/application.html.erb:38: unknown regexp options - dv
+C:/Sites/journal/app/views/layouts/application.html.erb:39: syntax error, unexpected '<'
+</div>
+ ^
+C:/Sites/journal/app/views/layouts/application.html.erb:41: unknown regexp options - bdy
+C:/Sites/journal/app/views/layouts/application.html.erb:42: syntax error, unexpected '<'
+</html>
+ ^
+C:/Sites/journal/app/views/layouts/application.html.erb:42: unterminated regexp meets end of file):
+  app/views/layouts/application.html.erb:18: syntax error, unexpected '<', expecting ')'
+  app/views/layouts/application.html.erb:18: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/layouts/application.html.erb:19: unknown regexp option - l
+  app/views/layouts/application.html.erb:21: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+  app/views/layouts/application.html.erb:22: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:22: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/layouts/application.html.erb:23: unknown regexp option - l
+  app/views/layouts/application.html.erb:24: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:26: unknown regexp options - av
+  app/views/layouts/application.html.erb:27: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:28: unknown regexp options - dv
+  app/views/layouts/application.html.erb:29: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:38: unknown regexp options - dv
+  app/views/layouts/application.html.erb:39: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:41: unknown regexp options - bdy
+  app/views/layouts/application.html.erb:42: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:42: unterminated regexp meets end of file
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_source.erb (40.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.1ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (51.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (114.1ms)
+
+
+Started GET "/" for ::1 at 2015-08-30 08:19:32 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+SyntaxError (C:/Sites/journal/app/views/layouts/application.html.erb:18: syntax error, unexpected '<', expecting ')'
+					<li>'.freeze;@output_buffer.ap...
+					 ^
+C:/Sites/journal/app/views/layouts/application.html.erb:18: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Sign Out', destroy_user_session_p...
+...                               ^
+C:/Sites/journal/app/views/layouts/application.html.erb:19: unknown regexp option - l
+C:/Sites/journal/app/views/layouts/application.html.erb:21: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+...ffer.safe_append='				<ul class="new navbar-nav pull-right">
+...                  				         ^
+C:/Sites/journal/app/views/layouts/application.html.erb:22: syntax error, unexpected '<'
+					<li>'.freeze;@output_buffer.ap...
+					 ^
+C:/Sites/journal/app/views/layouts/application.html.erb:22: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Sign Up', new_user_registration_p...
+...                               ^
+C:/Sites/journal/app/views/layouts/application.html.erb:23: unknown regexp option - l
+C:/Sites/journal/app/views/layouts/application.html.erb:24: syntax error, unexpected '<'
+				</ul>
+				 ^
+C:/Sites/journal/app/views/layouts/application.html.erb:26: unknown regexp options - av
+C:/Sites/journal/app/views/layouts/application.html.erb:27: syntax error, unexpected '<'
+		</div>
+		 ^
+C:/Sites/journal/app/views/layouts/application.html.erb:28: unknown regexp options - dv
+C:/Sites/journal/app/views/layouts/application.html.erb:29: syntax error, unexpected '<'
+</header>
+ ^
+C:/Sites/journal/app/views/layouts/application.html.erb:38: unknown regexp options - dv
+C:/Sites/journal/app/views/layouts/application.html.erb:39: syntax error, unexpected '<'
+</div>
+ ^
+C:/Sites/journal/app/views/layouts/application.html.erb:41: unknown regexp options - bdy
+C:/Sites/journal/app/views/layouts/application.html.erb:42: syntax error, unexpected '<'
+</html>
+ ^
+C:/Sites/journal/app/views/layouts/application.html.erb:42: unterminated regexp meets end of file):
+  app/views/layouts/application.html.erb:18: syntax error, unexpected '<', expecting ')'
+  app/views/layouts/application.html.erb:18: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/layouts/application.html.erb:19: unknown regexp option - l
+  app/views/layouts/application.html.erb:21: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+  app/views/layouts/application.html.erb:22: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:22: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/layouts/application.html.erb:23: unknown regexp option - l
+  app/views/layouts/application.html.erb:24: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:26: unknown regexp options - av
+  app/views/layouts/application.html.erb:27: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:28: unknown regexp options - dv
+  app/views/layouts/application.html.erb:29: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:38: unknown regexp options - dv
+  app/views/layouts/application.html.erb:39: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:41: unknown regexp options - bdy
+  app/views/layouts/application.html.erb:42: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:42: unterminated regexp meets end of file
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (45.2ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (40.3ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (93.7ms)
+
+
+Started GET "/" for ::1 at 2015-08-30 08:20:17 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+SyntaxError (C:/Sites/journal/app/views/layouts/application.html.erb:18: syntax error, unexpected '<', expecting ')'
+					<li>'.freeze;@output_buffer.ap...
+					 ^
+C:/Sites/journal/app/views/layouts/application.html.erb:18: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Sign Out', destroy_user_session_p...
+...                               ^
+C:/Sites/journal/app/views/layouts/application.html.erb:19: unknown regexp option - l
+C:/Sites/journal/app/views/layouts/application.html.erb:21: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+...ffer.safe_append='				<ul class="new navbar-nav pull-right">
+...                  				         ^
+C:/Sites/journal/app/views/layouts/application.html.erb:22: syntax error, unexpected '<'
+					<li>'.freeze;@output_buffer.ap...
+					 ^
+C:/Sites/journal/app/views/layouts/application.html.erb:22: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Sign Up', new_user_registration_p...
+...                               ^
+C:/Sites/journal/app/views/layouts/application.html.erb:23: unknown regexp option - l
+C:/Sites/journal/app/views/layouts/application.html.erb:24: syntax error, unexpected '<'
+				</ul>
+				 ^
+C:/Sites/journal/app/views/layouts/application.html.erb:26: unknown regexp options - av
+C:/Sites/journal/app/views/layouts/application.html.erb:27: syntax error, unexpected '<'
+		</div>
+		 ^
+C:/Sites/journal/app/views/layouts/application.html.erb:28: unknown regexp options - dv
+C:/Sites/journal/app/views/layouts/application.html.erb:29: syntax error, unexpected '<'
+</header>
+ ^
+C:/Sites/journal/app/views/layouts/application.html.erb:38: unknown regexp options - dv
+C:/Sites/journal/app/views/layouts/application.html.erb:39: syntax error, unexpected '<'
+</div>
+ ^
+C:/Sites/journal/app/views/layouts/application.html.erb:41: unknown regexp options - bdy
+C:/Sites/journal/app/views/layouts/application.html.erb:42: syntax error, unexpected '<'
+</html>
+ ^
+C:/Sites/journal/app/views/layouts/application.html.erb:42: unterminated regexp meets end of file):
+  app/views/layouts/application.html.erb:18: syntax error, unexpected '<', expecting ')'
+  app/views/layouts/application.html.erb:18: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/layouts/application.html.erb:19: unknown regexp option - l
+  app/views/layouts/application.html.erb:21: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+  app/views/layouts/application.html.erb:22: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:22: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/layouts/application.html.erb:23: unknown regexp option - l
+  app/views/layouts/application.html.erb:24: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:26: unknown regexp options - av
+  app/views/layouts/application.html.erb:27: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:28: unknown regexp options - dv
+  app/views/layouts/application.html.erb:29: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:38: unknown regexp options - dv
+  app/views/layouts/application.html.erb:39: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:41: unknown regexp options - bdy
+  app/views/layouts/application.html.erb:42: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:42: unterminated regexp meets end of file
+
+
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.9ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (42.4ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (92.2ms)
+
+
+Started GET "/" for ::1 at 2015-08-30 08:20:49 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 690ms (Views: 688.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2015-08-30 08:20:56 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (80.0ms)
+Completed 200 OK in 370ms (Views: 360.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-08-30 08:20:58 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 288ms (Views: 288.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2015-08-30 08:21:02 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 288ms (Views: 287.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-30 08:21:49 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 299ms (Views: 298.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-30 08:21:52 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 348ms (Views: 347.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-08-30 08:22:30 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 311ms (Views: 310.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-08-30 08:22:36 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u431XfOLheh6Z9zpSsGHh8INSJeC1XAEl30/bfO0RpICx3uSUveS9Skpnc3cusm6PDhm3dpIhVE/MTceOqjipA==", "user"=>{"email"=>"dina.nashaat@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "dina.nashaat@gmail.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["current_sign_in_at", "2015-08-30 06:22:37.097348"], ["sign_in_count", 2], ["updated_at", "2015-08-30 06:22:37.099045"], ["id", 6]]
+  [1m[36m (98.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 267ms (ActiveRecord: 100.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-30 08:22:37 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/profile" for ::1 at 2015-08-30 08:22:37 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  Rendered profile/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 350ms (Views: 346.3ms | ActiveRecord: 0.0ms)
