@@ -10,48 +10,303 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-  <div class="right">
-<div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="glyphicon glyphicon-plus"></span>
-       <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="">Calendar</a>
-				  <li><a href="">Notes</a></li>
-				  <li><a href="">To Do </a></li>
-				  <li><a href="">playlist</a></li>
-				  <li><a href="">clock</a></li>
-	              <li><a href="">my files</a></li>
-	              <li><a href="tasks#index">Tasks </a></li>
-				  <li><a href="https:www.accuweather.com">weather</a></li>
-				  <li><a href="https://www.facebook.com">Facebook</a></li>
-				  <li><a href="https://instagram.com">Instagram</a></li>
-				  <li><a href="https://www.google.com">Google </a></li>
-				  <li><a href="https://maps.google.com">Maps</a></li>
-  </ul>
 
-</div>
-</div>
-<div class="right1">
-<div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    <img height="20" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYI_E6petsjAPTl-mL1rH-Sy3nLNMlRL6C4U-36mfLjgsCT6kORvBf4tHH" width="20">
-    <span class="caret"></span>
-  </button>
- <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+   <style>
+      .navbrand img{
+        width:20px;
+      }
+      .navbar {
+        background:#C390D4;
+      }
+
+.navbar-default .navbar-nav>li>a {
+    color: #e8e8e8;
+}
+ 
+ .navbar-header{margin-top: 0px}
+           
+       .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+    color: #333;
+    background-color: transparent;
+}
+.navbar-fixed-top {
+    background: #C390D4;
+      top: 0px;
+}
+.dropdown-toggle{right:0px;}
+.nav {
+    padding-right: 0px;
+    margin-bottom: 0;
+    margin-top: 0px;
+    list-style: none;
+}
+
+a {
+  background-color: transparent;
+}
+img {
+  border: 0;
+}
+input {
+  line-height: normal;
+}
+b, strong {
+  font-weight: 700;
+}
+
+.row {
+  margin-right: auto;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.container {
+  width: 150px;
+  padding-right: 15px;
+  padding-left: 15px;
+    margin-right: 0px;
+  margin-left: auto;
+}
+.clearfix::before, .clearfix::after, .dl-horizontal dd::before, .dl-horizontal dd::after, .container::before, .container::after, .container-fluid::before, .container-fluid::after, .row::before, .row::after, .form-horizontal .form-group::before, .form-horizontal .form-group::after, .btn-toolbar::before, .btn-toolbar::after, .btn-group-vertical > .btn-group::before, .btn-group-vertical > .btn-group::after, .nav::before, .nav::after, .navbar::before, .navbar::after, .navbar-header::before, .navbar-header::after, .navbar-collapse::before, .navbar-collapse::after, .pager::before, .pager::after, .panel-body::before, .panel-body::after, .modal-footer::before, .modal-footer::after {
+  display: table;
+  content: " ";
+}
+.clearfix::after, .dl-horizontal dd::after, .container::after, .container-fluid::after, .row::after, .form-horizontal .form-group::after, .btn-toolbar::after, .btn-group-vertical > .btn-group::after, .nav::after, .navbar::after, .navbar-header::after, .navbar-collapse::after, .pager::after, .panel-body::after, .modal-footer::after {
+  clear: both;
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4285;
+  color: #333;padding-top: 70px;
+  background-color: #fff;
+}
+
+html {
+  font-size: 10px;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+/* @media all and (min-width:992px) */
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  float: left;
+}
+/* @media all and (min-width:992px) */
+.col-md-2 {
+  width: 16.66%;
+}
+/* @media all and (min-width:992px) */
+.col-md-6 {
+  width: 50%;
+}
+/* @media all and (min-width:992px) */
+.col-md-4 {
+  width: 33.33%;
+}
+.col-md-4 .fixfix {
+  position: fixed;
+  width: 25%;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+h4, .h4, h5, .h5, h6, .h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h6, .h6 {
+  font-size: 12px;
+}
+h5, .h5 {
+  font-size: 14px;
+}
+p {
+  margin: 0 0 10px;
+}
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+}
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.col-md-6 img, .col-md-6 .well input {
+  width: 100%;
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-thumbs-up::before {
+  content: "\e125";
+}
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4285;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+h4, .h4 {
+  font-size: 18px;
+}
+.btn-warning {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.btn-info {
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.btn-danger {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.btn-xs, .btn-group-xs > .btn {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+
+
+.glyphicon-gift::before {
+  content: "\e102";
+}
+.glyphicon-road::before {
+  content: "\e024";
+}
+.glyphicon-star::before {
+  content: "\e006";
+}
+.glyphicon-music::before {
+  content: "\e002";
+}
+.pull-right {
+  float: right !important;
+}
+
+
+/
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  float: left;
+}
+/* @media all and (min-width:992px) */
+.col-md-2 {
+  width: 16.66%;
+}
+/* @media all and (min-width:992px) */
+.col-md-6 {
+  width: 50%;
+}
+/* @media all and (min-width:992px) */
+.col-md-4 {
+  width: 33.33%;
+}
+.col-md-4 .fixfix {
+  position: fixed;
+  width: 25%;
+}
+.footer{bottom: 0px;}
+</style>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src=""></a>
+          <div class="navbar-collapse navbar-right collapse" aria-expanded="false" style="height: 1px;">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" href="#" data-toggle="dropdown"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span><span class="caret"></span></a>
+                 <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Calendar</a></li>
+                   <li><a href="">Notes</a></li>
+          <li><a href="">To Do </a></li>
+          <li><a href="">playlist</a></li>
+          <li><a href="">clock</a></li>
+                <li><a href="">my files</a></li>
+                <li><a href="tasks#index">Tasks </a></li>
+              </ul>
+            </li>
+<li class="dropdown">
+              <a class="dropdown-toggle" href="#" data-toggle="dropdown"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
    <li class="dropdown-header">Signed in as <%= current_user.email %></li>
-    <li><a href="#"></a>Sign Out</li>
-    
-  
-</div>
+                    <li><a href="#">Your profile</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Sign out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+        </div>
+   </div>
 
-  </ul>
-  </div>
-  </div>
-  </div>
-</nav>
+        
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2  hidden-sm hidden-xs">
+               <span class="glyphicon glyphicon-hand-right"  aria-hidden="true"></span><a href="https://www.facebook.com"> Facebook</a>
+               <br>
+               <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> <a href="https://instagram.com"> Instagram</a>
+            <br>
+                         <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span><a href="https://maps.google.com"> Maps</a>
+<br>
+               <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span><a href="https://www.google.com"> Google </a>
+<br>
+   </div>
+        </div>
+
+        
+           </div></div>
 <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
